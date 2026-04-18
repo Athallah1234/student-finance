@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mahasiswa Finance 🎓💸
 
-## Getting Started
+Aplikasi pengelolaan keuangan modern, profesional, dan responsif yang dirancang khusus untuk kebutuhan mahasiswa. Bantu mahasiswa mengatur pemasukan, pengeluaran, tabungan, anggaran, hingga target keuangan dengan UI yang premium dan elegan.
 
-First, run the development server:
+## ✨ Fitur Unggulan
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dashboard Modern**: Ringkasan saldo, pemasukan, pengeluaran, dan tabungan dengan grafik interaktif.
+- **Pemasukan & Pengeluaran**: Catat transaksi dengan kategori lengkap khusus mahasiswa (uang kos, fotokopi, nongkrong, dll).
+- **Budgeting**: Setel batas pengeluaran bulanan per kategori dengan notifikasi visual saat mendekati batas.
+- **Target Tabungan**: Pantau progress tabungan untuk impianmu (laptop baru, wisuda, liburan).
+- **Hutang & Piutang**: Jangan lupa membayar atau menagih pinjaman teman.
+- **Analitik & AI Insights**: Dapatkan saran penghematan cerdas berdasarkan pola belanjamu.
+- **Dark & Light Mode**: Nyaman di mata, kapanpun kamu butuh mencatat.
+- **Authentication**: Aman dengan NextAuth (Email, Google, GitHub).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS v4
+- **Database**: MongoDB + Mongoose
+- **Auth**: NextAuth.js
+- **Charts**: Recharts
+- **Animation**: Framer Motion
+- **Icons**: Lucide React
+- **Validation**: Zod + React Hook Form
+- **Toasts**: Sonner
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Cara Menjalankan
 
-## Learn More
+1. **Clone repositori** (jika sudah di-git).
+2. **Install dependensi**:
+   ```bash
+   npm install
+   ```
+3. **Setup Environment Variables**:
+   Buat file `.env.local` dan isi sesuai template:
+   ```env
+   MONGODB_URI=your_mongodb_atlas_uri
+   NEXTAUTH_SECRET=your_secret
+   NEXTAUTH_URL=http://localhost:3000
+   GOOGLE_CLIENT_ID=...
+   GOOGLE_CLIENT_SECRET=...
+   GITHUB_ID=...
+   GITHUB_SECRET=...
+   ```
+4. **Jalankan Aplikasi**:
+   ```bash
+   npm run dev
+   ```
+5. Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Struktur Folder
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Routing dan Page (Next.js App Router)
+- `src/components`: Komponen UI reusable
+- `src/models`: Schema Mongoose untuk MongoDB
+- `src/lib`: Konfigurasi library (Auth, MongoDB, Utils)
+- `src/api`: Route Handlers untuk Backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Lisensi
 
-## Deploy on Vercel
+Proyek ini dibuat untuk tujuan edukasi dan membantu komunitas mahasiswa.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Dibuat dengan ❤️ untuk Mahasiswa Indonesia.
